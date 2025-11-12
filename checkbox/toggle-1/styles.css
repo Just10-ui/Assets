@@ -6,9 +6,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 1s ease;
 }
 
-#toggle {
+#checkbox {
   display: none;
 }
 
@@ -30,6 +31,6 @@
   transition: all 0.5s;
 }
 
-#toggle:checked ~ .toggle-switch {
+#checkbox:checked ~ .toggle-switch {
  transform: translateX(calc(80px - 30px));
 }
