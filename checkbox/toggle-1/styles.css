@@ -28,7 +28,28 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  transition: all 0.5s;
+  transition: all 1s;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: auto;
+  left: auto;
+  transition: opacity 0.5s ease-out;
+}
+
+.moon {
+  opacity: 1;
+}
+
+.sun {
+  opacity: 0;
 }
 
 #checkbox:checked ~ .toggle-switch {
