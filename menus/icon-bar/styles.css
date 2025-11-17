@@ -1,0 +1,24 @@
+nav {
+  width: max-content;
+  height: 10vh;
+  background-color: #747474;
+  margin: 3rem auto;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+a {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem;
+  transition: background-color .5s ease;
+}
+
+a:hover {
+  background-color: #000;
+}
+
+#active {
+  background-color: #8a2be2;
+}
