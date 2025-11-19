@@ -11,8 +11,8 @@ nav {
 a {
   color: #fff;
   font-size: 2.5rem;
-  padding: 1rem;
-  transition: background-color .5s ease;
+  padding: 1rem; 
+  transition: background-color .3s ease;
 }
 
 a:hover {
@@ -21,4 +21,9 @@ a:hover {
 
 #active {
   background-color: #8a2be2;
+  transition: background-color .3s ease;
+}
+
+#active:hover {
+  background-color: #41146b;
 }
