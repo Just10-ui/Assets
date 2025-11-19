@@ -1,0 +1,25 @@
+.container {
+  width: 40px;
+  height: 5vh;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.bar-1, .bar-2, .bar-3 {
+  background-color: #000;
+  height: 15%;
+}
+
+.change .bar-2 {
+  opacity: 0;
+}
+
+.change .bar-1 {
+  transform: translateY(10px) rotate(40deg);
+}
+
+.change .bar-3 {
+  transform: translateY(-10px) rotate(-40deg);
+}
