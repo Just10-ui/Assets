@@ -11,6 +11,7 @@
 .bar-1, .bar-2, .bar-3 {
   background-color: #000;
   height: 15%;
+  transition: all .5s ease;
 }
 
 .change .bar-2 {
