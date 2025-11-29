@@ -1,13 +1,13 @@
 const image = document.querySelectorAll('.image');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-let num = 0;
+let num = 1;
+let index = 0;
 
 function nextSlide() {
-  if (num > -212) {
-    num += -106;
-  } else {
-    num += 0;
+  if (index < image.length - 1) {
+    index += 1;
+    num = index * -106;
   }
 
   for (let i = 0; i < image.length; i++) {
@@ -16,10 +16,9 @@ function nextSlide() {
 }
 
 function prevSlide() {
-  if (num < 0) {
+  if (index > 0) {
+    index -= 1;
     num += 106;
-  } else {
-    num += 0;
   }
 
   for (let i = 0; i < image.length; i++) {
