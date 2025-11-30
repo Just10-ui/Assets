@@ -1,0 +1,13 @@
+.tabcontent {
+  display: none;
+  animation: fade .5s ease-in;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
