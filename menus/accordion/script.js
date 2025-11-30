@@ -4,12 +4,13 @@ for (const btn of btns) {
   btn.addEventListener('click', active);
 }
 
-for (const btn of btns) {
-  if (btn.className.match('active')) {
-    console.log('active');
-  }
-}
-
 function active(event) {
-  event.target.classList.toggle('active');
+  event.currentTarget.classList.toggle('active');
+
+  const panel = event.currentTarget.nextElementSibling;
+  if (event.currentTarget.className.includes('active')) {
+    panel.style.height = '10vh';
+  } else {
+    panel.style.height = 0;
+  }
 }

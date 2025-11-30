@@ -18,6 +18,7 @@
   position: relative;
   color: #505050;
   cursor: pointer;
+  transition: .5s;
 }
 
 .accordion:hover {
@@ -38,4 +39,5 @@
 .panel {
   height: 0;
   overflow: hidden;
+  transition: height 1s ease;
 }
