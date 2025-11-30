@@ -1,0 +1,41 @@
+.container {
+  width: 1200px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.accordion {
+  border: none;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  position: relative;
+  color: #505050;
+  cursor: pointer;
+}
+
+.accordion:hover {
+  background-color: #5c5c5c;
+  color: #fff;
+}
+
+.accordion::after {
+  content: '+';
+  position: absolute;
+  right: 30px;
+}
+
+.accordion.active::after {
+  content: '-';
+}
+
+.panel {
+  height: 0;
+  overflow: hidden;
+}
