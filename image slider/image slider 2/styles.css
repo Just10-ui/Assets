@@ -1,0 +1,46 @@
+.container {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 700px;
+  height: 300px;
+  padding: 20px;
+  margin: 5rem auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  animation: loop 10s linear infinite;
+  padding-right: 40px;
+}
+
+.content {
+  border-radius: 5px;
+  width: 700px;
+  height: 100%;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.blue {
+  background-color: #0000ff;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+@keyframes loop {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
