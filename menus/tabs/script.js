@@ -14,4 +14,10 @@ function active(event) {
   }
 
   content[index].style.display = 'block';
+
+  links.forEach(link => {
+    link.classList.remove('active');
+  });
+
+  event.currentTarget.classList.add('active');
 }

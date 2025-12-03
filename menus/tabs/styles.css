@@ -22,6 +22,10 @@ body {
   cursor: pointer;
 }
 
+.active {
+  background-color: #ccc;
+}
+
 .tablink:hover {
   background-color: #adacac;
 }
