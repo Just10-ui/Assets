@@ -1,16 +1,23 @@
+const links = document.querySelectorAll('.tablink');
 
-function OpenTabs(event, tabs) {
-  const tabLinks = document.querySelectorAll('.tablink');
-  const tabContent = document.querySelectorAll('.tabcontent');
+function active(event) {
+  const content = document.querySelectorAll('.tabcontent');
+  const array = Array.from(links);
+  const i = array.indexOf(event.currentTarget);
 
-  tabLinks.forEach(tablink => {
-    tablink.classList.remove('active');
+  content.forEach(cont => {
+    cont.style.display = 'none';
   });
 
-  tabContent.forEach(tabcontent => {
-    tabcontent.style.display = 'none';
+  content[i].style.display = 'block';
+
+  links.forEach(link => {
+    link.classList.remove('active');
   });
 
-  document.getElementById(tabs).style.display = 'block';
   event.currentTarget.classList.add('active');
 }
+
+links.forEach(link => {
+  link.addEventListener('click', active);
+})
